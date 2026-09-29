@@ -4,24 +4,25 @@ lege repository die je als template kan gebruiken om een eigen repository te sta
 
 ![A description of my image](images/empty.png)
 
-  
 ## specifications
 
-microcontroller:
+microcontroller: ESP32 USB-C WROOM 4Mb Devkit V1
 
-motors: 
+motors: 2x Aslong JGA12-N20-30 DC-transmissiemotor 6V 500RPM
 
-h-bridge:
+h-bridge: TB6612FNG
 
 sensors:
 
-batteries:
+batteries: 2x LG 18650 Lithium 3500mAh 10A met 2S BMS
 
-wireless communication:
+> **Let op:** Een 2S-batterij levert 7,4 V nominaal en maximaal 8,4 V wanneer hij volledig opgeladen is. Sluit de 6V-motoren daarom niet rechtstreeks op de batterij aan; gebruik een geschikte spanningsregelaar. De 5V-converter uit de BOM kan de motorsnelheid verlagen.
+
+wireless communication: WiFi en/of Bluetooth (via ESP32)
 
 distance sensor - motors:
 
 weight:
 
-speed: 
+speed:
 
