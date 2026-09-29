@@ -9,5 +9,7 @@
 |4|2S BMS laad- en protectiebordje voor 2x 18650|BMS|nieuw|€2,00|1|€2,00|
 |5|Motor driver module TB6612FNG voor Arduino|motor driver|nieuw|€3,30|1|€3,30|
 |6|Step-Down buck converter van 4.5V-24V naar 5V 3A|spanningsregelaar|nieuw|€2,35|1|€2,35|
+|7|Standaard inbouw wipschakelaar - klein (SKU 000211)|schakelaar|nieuw|€0,45|1|€0,45|
+|8|Aslong JGA12-N20-30 DC-transmissiemotor 6V 500RPM (SKU 005462)|motor|nieuw|€4,50|2|€9,00|
 
-**Totaal: €27,62**
+**Totaal: €37,07**
