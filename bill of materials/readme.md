@@ -12,4 +12,5 @@
 |7|Standaard inbouw wipschakelaar - klein (SKU 000211)|schakelaar|nieuw|€0,45|1|€0,45|
 |8|Aslong JGA12-N20-30 DC-transmissiemotor 6V 500RPM (SKU 005462)|motor|nieuw|€4,50|2|€9,00|
 |9|QTR-8A Reflectance Sensor Array Pololu 960|line sensor array|nieuw|€15,75|1|€15,75|
+|10|Houten plank|basis/frame|recup|n.v.t.|1|€0,00|
 |**Totaal**| | | | | | **€52,82**|
