@@ -1,0 +1,49 @@
+A high-quality step-down power converter with an efficiency of 97.5% at 6.5V to 5V at 0.7A and relatively little heat generation. The efficiency is 94% at 12V to 5V at 1A.
+
+Power supply 4.5V to 24V
+
+Variable output voltage between 0.8V and 17V via potentiometer, allowing you to select very unusual voltages, quite handy!
+
+In addition, there are a number of fixed values:
+- 1.8V
+- 2.5V
+- 3.3V
+- 5V
+- 9V
+- 12V
+
+Maximum output current: 3A at 5V
+Continuous output current: 2.1A
+
+Dimensions: 20x11x5mm
+
+Instructions for use:
+
+This module has 4 connections:
+- VO+ (Output current +)
+- GND (Ground / minus)
+- IN+ (Input current +)
+- EN (Enable, if this is switched low no current will flow)
+
+The ground / - of both input and output are connected to GND.
+
+width=660
+
+The solder points on the back of the board are actually solderable jumpers. It is not intended that wiring be soldered here, but purely for selecting the voltage.
+
+By default, the module is set to provide a variable voltage via the potentiometer and can be adjusted as desired. With a magnifying glass, you can see that the last jumper (ADJ) is soldered. If you want to use one of the fixed voltages (1.8V, 2.5V, 3.3V, 5V, 9V or 12V), the connection at ADJ must be broken. This can be cut with a small sharp knife. Then solder a connection at the desired voltage.
+
+width=431
+
+ 
+
+ 
+
+ 
+
+ 
+
+Dimensions
+Length: 2cm
+Width: 1.1cm
+Height: 0.46cm
