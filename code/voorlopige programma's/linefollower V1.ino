@@ -26,6 +26,7 @@ const uint8_t motorRechtsVooruitPin = 18;	//BIN1
 const uint8_t motorRechtsAchteruitPin = 17;	//BIN2
 const uint8_t motorPwmAPin = 23;	// PWM/enable voor motorkanaal A
 const uint8_t motorPwmBPin = 19;	// PWM/enable voor motorkanaal B
+const uint8_t knopPin = 4;
 
 struct FollowerSettings {
 	int speed;       // 0-255; gebruik deze waarde in de motorregeling
@@ -162,6 +163,7 @@ void setup() {
 	pinMode(motorRechtsAchteruitPin, OUTPUT);
 	pinMode(motorPwmAPin, OUTPUT);
 	pinMode(motorPwmBPin, OUTPUT);
+	pinMode(knopPin, INPUT_PULLUP);
 
 	preferences.begin("linefollow", false);
 	loadSettings();
