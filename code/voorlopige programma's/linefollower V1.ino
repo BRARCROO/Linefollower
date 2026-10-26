@@ -11,6 +11,15 @@
 const char *WIFI_SSID = "LineFollower";
 const char *WIFI_PASSWORD = "line1234"; // Minimaal 8 tekens
 
+const uint8_t sensor1pin = 39; 
+const uint8_t sensor2Pin = 36;
+const uint8_t sensor3Pin = 34;
+const uint8_t sensor4Pin = 32;
+const uint8_t sensor5Pin = 33;
+const uint8_t sensor6Pin = 25;
+const uint8_t sensor7Pin = 26; // optioneel, voor achtsensorenconfiguratie
+const uint8_t sensor8pin = 27; // optioneel, voor achtsensorenconfiguratie
+
 struct FollowerSettings {
 	int speed;       // 0-255; gebruik deze waarde in de motorregeling
 	float kp;
@@ -133,6 +142,14 @@ void handleBluetoothCommand(String command) {
 
 void setup() {
 	Serial.begin(115200);
+	analogReadResolution(12);
+	pinMode(sensor1Pin, INPUT);
+	pinMode(sensor2Pin, INPUT);
+	pinMode(sensor3Pin, INPUT);
+	pinMode(sensor4Pin, INPUT);
+	pinMode(sensor5Pin, INPUT);
+	pinMode(sensor6Pin, INPUT);
+
 	preferences.begin("linefollow", false);
 	loadSettings();
 
