@@ -11,14 +11,21 @@
 const char *WIFI_SSID = "LineFollower";
 const char *WIFI_PASSWORD = "line1234"; // Minimaal 8 tekens
 
-const uint8_t sensor1pin = 39; 
+const uint8_t sensor1Pin = 39;
 const uint8_t sensor2Pin = 36;
 const uint8_t sensor3Pin = 34;
 const uint8_t sensor4Pin = 32;
 const uint8_t sensor5Pin = 33;
-const uint8_t sensor6Pin = 25;
-const uint8_t sensor7Pin = 26; // optioneel, voor achtsensorenconfiguratie
-const uint8_t sensor8pin = 27; // optioneel, voor achtsensorenconfiguratie
+const uint8_t sensor6Pin = 35;
+const uint8_t sensor7Pin = 26;	// optioneel, voor achtsensorenconfiguratie
+const uint8_t sensor8Pin = 27;	// optioneel, voor achtsensorenconfiguratie
+
+const uint8_t motorLinksVooruitPin = 22;	//AIN1
+const uint8_t motorLinksAchteruitPin = 21;	//AIN2
+const uint8_t motorRechtsVooruitPin = 18;	//BIN1
+const uint8_t motorRechtsAchteruitPin = 17;	//BIN2
+const uint8_t motorPwmAPin = 23;	// PWM/enable voor motorkanaal A
+const uint8_t motorPwmBPin = 19;	// PWM/enable voor motorkanaal B
 
 struct FollowerSettings {
 	int speed;       // 0-255; gebruik deze waarde in de motorregeling
@@ -149,6 +156,12 @@ void setup() {
 	pinMode(sensor4Pin, INPUT);
 	pinMode(sensor5Pin, INPUT);
 	pinMode(sensor6Pin, INPUT);
+	pinMode(motorLinksVooruitPin, OUTPUT);
+	pinMode(motorLinksAchteruitPin, OUTPUT);
+	pinMode(motorRechtsVooruitPin, OUTPUT);
+	pinMode(motorRechtsAchteruitPin, OUTPUT);
+	pinMode(motorPwmAPin, OUTPUT);
+	pinMode(motorPwmBPin, OUTPUT);
 
 	preferences.begin("linefollow", false);
 	loadSettings();
