@@ -12,5 +12,6 @@
 |7|Standaard inbouw wipschakelaar - klein (SKU 000211)|schakelaar|nieuw|€0,45|1|€0,45|https://www.tinytronics.nl/nl/schakelaars/manuele-schakelaars/wipschakelaars/standaard-inbouw-wipschakelaar-klein |
 |8|Aslong JGA12-N20-30 DC-transmissiemotor 6V 500RPM (SKU 005462)|motor|nieuw|€4,50|2|€9,00|https://www.tinytronics.nl/nl/mechanica-en-actuatoren/motoren/dc-motoren/aslong-jga12-n20-30-dc-transmissiemotor-6v-500rpm |
 |9|QTR-8A Reflectance Sensor Array Pololu 960|line sensor array|nieuw|€15,75|1|€15,75| https://www.vanallesenmeer.nl/qtr-8a-reflectance-sensor-array-pololu-960 |
-|10|Houten plank|basis/frame|recup|n.v.t.|1|€0,00|    |
-|**Totaal**| | | | | | **€52,82**|    |
+|10|DollaTek 2PCS universeel dubbelzijdig PCB-paneel (8 × 12 cm)|PCB-paneel|nieuw|€5,99|1|€5,99|Amazon|
+|11|D-gat rubber wiel voor N20-motor (zwart, variant B)|wiel|nieuw|€0,76|2|€1,52|AliExpress – Glintdeer Store|
+|**Totaal**| | | | | | **€60,33**|    |
