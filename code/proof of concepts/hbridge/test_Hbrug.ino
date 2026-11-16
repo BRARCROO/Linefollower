@@ -3,6 +3,9 @@ const int motorA_in1 = 16; // IN1
 const int motorA_in2 = 17; // IN2
 const int motorB_in1 = 18; // IN3
 const int motorB_in2 = 19; // IN4
+const int motorA_pwm = 5;  // PWM voor motor A
+const int motorB_pwm = 6;  // PWM voor motor B
+const int standbyPin = 4; // Standby pin van de DRV8833
 
 void setup() {
   // Stel de pinnen in als output
@@ -10,6 +13,9 @@ void setup() {
   pinMode(motorA_in2, OUTPUT);
   pinMode(motorB_in1, OUTPUT);
   pinMode(motorB_in2, OUTPUT);
+  pinMode(motorA_pwm, OUTPUT);
+  pinMode(motorB_pwm, OUTPUT);
+  pinMode(standbyPin, OUTPUT);
   Serial.begin(115200);
 }
 
@@ -44,11 +50,13 @@ void loop() {
 // Functie om motor A aan te sturen
 void driveMotorA(int speed) {
   if (speed > 0) {
-    analogWrite(motorA_in1, speed);
-    analogWrite(motorA_in2, 0);
+    digitalWrite(motorA_in1, HIGH);
+    digitalWrite(motorA_in2, LOW);
+    analogWrite(motorA_pwm, speed);
   } else if (speed < 0) {
-    analogWrite(motorA_in1, 0);
-    analogWrite(motorA_in2, -speed);
+    digitalWrite(motorA_in1, LOW);
+    digitalWrite(motorA_in2, HIGH);
+    analogWrite(motorA_pwm, speed);
   } else {
     stopMotorA();
   }
@@ -57,11 +65,13 @@ void driveMotorA(int speed) {
 // Functie om motor B aan te sturen
 void driveMotorB(int speed) {
   if (speed > 0) {
-    analogWrite(motorB_in1, speed);
-    analogWrite(motorB_in2, 0);
+    digitalWrite(motorB_in1, HIGH);
+    digitalWrite(motorB_in2, LOW);
+    analogWrite(motorB_pwm, speed);
   } else if (speed < 0) {
-    analogWrite(motorB_in1, 0);
-    analogWrite(motorB_in2, -speed);
+    digitalWrite(motorB_in1, LOW);
+    digitalWrite(motorB_in2, HIGH);
+    analogWrite(motorB_pwm, speed);
   } else {
     stopMotorB();
   }
@@ -69,14 +79,16 @@ void driveMotorB(int speed) {
 
 // Functie om motor A te stoppen
 void stopMotorA() {
-  analogWrite(motorA_in1, 0);
-  analogWrite(motorA_in2, 0);
+  digitalWrite(motorA_in1, LOW);
+  digitalWrite(motorA_in2, LOW);
+  analogWrite(motorA_pwm, 0);
 }
 
 // Functie om motor B te stoppen
 void stopMotorB() {
-  analogWrite(motorB_in1, 0);
-  analogWrite(motorB_in2, 0);
+  digitalWrite(motorB_in1, LOW);
+  digitalWrite(motorB_in2, LOW);
+  analogWrite(motorB_pwm, 0);
 }
 
 // Functie om alle motoren te stoppen
@@ -84,3 +96,4 @@ void stopMotors() {
   stopMotorA();
   stopMotorB();
 }
+//
